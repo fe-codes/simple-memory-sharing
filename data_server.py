@@ -97,7 +97,7 @@ For the client side, request data in the following form
 
 def get_tcp_data(key):
     s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    s.connect(('127.0.0.1',51013))
+    s.connect(('127.0.0.1',8000))
     s.send(key)
     data = ''
     buf = s.recv(10*1024*1024)
